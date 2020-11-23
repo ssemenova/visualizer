@@ -1,0 +1,13 @@
+[0.032s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.105s] [35m[1mScanning dependencies of target sub[0m
+[0.138s] [ 33%] Built target talker
+[0.141s] [ 66%] Built target visualizer
+[0.162s] [ 83%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[0.230s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+[0.231s]     4 | #include [01;31m[K"opencv2/opencv.hpp"[m[K
+[0.231s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[0.231s] compilation terminated.
+[0.233s] make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1
+[0.233s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2
+[0.234s] make: *** [Makefile:141: all] Error 2
+[0.237s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

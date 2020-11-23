@@ -1,0 +1,14 @@
+CMake Error at CMakeLists.txt:36 (add_executable):
+  add_executable cannot create target "talker" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory "/home/rusty/GITrepo/visualizer".  See documentation
+  for policy CMP0002 for more details.
+
+
+CMake Error at /opt/ros/foxy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:40 (message):
+  ament_target_dependencies() the first argument must be a valid target name
+Call Stack (most recent call first):
+  CMakeLists.txt:37 (ament_target_dependencies)
+
+
+make: *** [Makefile:310: cmake_check_build_system] Error 1

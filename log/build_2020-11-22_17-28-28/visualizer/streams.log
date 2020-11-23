@@ -1,0 +1,87 @@
+[0.027s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake /home/rusty/GITrepo/visualizer -DCMAKE_INSTALL_PREFIX=/home/rusty/GITrepo/visualizer/install/visualizer
+[0.118s] -- The C compiler identification is GNU 9.3.0
+[0.211s] -- The CXX compiler identification is GNU 9.3.0
+[0.219s] -- Check for working C compiler: /usr/bin/cc
+[0.343s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.344s] -- Detecting C compiler ABI info
+[0.471s] -- Detecting C compiler ABI info - done
+[0.488s] -- Detecting C compile features
+[0.488s] -- Detecting C compile features - done
+[0.492s] -- Check for working CXX compiler: /usr/bin/c++
+[0.622s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.624s] -- Detecting CXX compiler ABI info
+[0.758s] -- Detecting CXX compiler ABI info - done
+[0.778s] -- Detecting CXX compile features
+[0.779s] -- Detecting CXX compile features - done
+[0.786s] -- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.839s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.5", minimum required is "3") 
+[0.839s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.221s] -- Found rclcpp: 2.2.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[1.293s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.310s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[1.455s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.487s] -- Found FastRTPS: /opt/ros/foxy/include  
+[1.623s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.735s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.739s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.741s] -- Looking for pthread.h
+[1.858s] -- Looking for pthread.h - found
+[1.859s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.979s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.980s] -- Looking for pthread_create in pthreads
+[2.076s] -- Looking for pthread_create in pthreads - not found
+[2.077s] -- Looking for pthread_create in pthread
+[2.189s] -- Looking for pthread_create in pthread - found
+[2.190s] -- Found Threads: TRUE  
+[2.477s] -- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[2.614s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.623s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.623s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/rusty/GITrepo/visualizer/include>
+[2.623s] -- Configured cppcheck exclude dirs and/or files: 
+[2.632s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.632s] -- Configured cpplint exclude dirs and/or files: 
+[2.636s] -- Added test 'lint_cmake' to check CMake code style
+[2.646s] -- Added test 'uncrustify' to check C / C++ code style
+[2.646s] -- Configured uncrustify additional arguments: 
+[2.648s] -- Added test 'xmllint' to check XML markup files
+[2.654s] -- Configuring done
+[2.673s] -- Generating done
+[2.676s] -- Build files have been written to: /home/rusty/GITrepo/visualizer/build/visualizer
+[2.688s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake /home/rusty/GITrepo/visualizer -DCMAKE_INSTALL_PREFIX=/home/rusty/GITrepo/visualizer/install/visualizer
+[2.693s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[2.760s] [35m[1mScanning dependencies of target listener[0m
+[2.760s] [35m[1mScanning dependencies of target visualizer[0m
+[2.761s] [35m[1mScanning dependencies of target talker[0m
+[2.777s] [ 16%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[2.825s] [ 33%] [32mBuilding CXX object CMakeFiles/listener.dir/src/subscriber_member_function.cpp.o[0m
+[2.827s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[2.827s] [ 66%] [32m[1mLinking CXX executable visualizer[0m
+[2.901s] [ 66%] Built target visualizer
+[7.974s] [ 83%] [32m[1mLinking CXX executable talker[0m
+[8.237s] [ 83%] Built target talker
+[10.727s] [100%] [32m[1mLinking CXX executable listener[0m
+[11.113s] [100%] Built target listener
+[11.131s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[11.196s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/rusty/GITrepo/visualizer/build/visualizer
+[11.210s] -- Install configuration: ""
+[11.210s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer
+[11.210s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker
+[11.213s] -- Set runtime path of "/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker" to ""
+[11.213s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/listener
+[11.218s] -- Set runtime path of "/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/listener" to ""
+[11.218s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/package_run_dependencies/visualizer
+[11.219s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/parent_prefix_path/visualizer
+[11.219s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.sh
+[11.219s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.dsv
+[11.220s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.sh
+[11.220s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.dsv
+[11.220s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.bash
+[11.221s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.sh
+[11.221s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.zsh
+[11.221s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.dsv
+[11.221s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.dsv
+[11.222s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/packages/visualizer
+[11.222s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig.cmake
+[11.222s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig-version.cmake
+[11.223s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.xml
+[11.227s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/rusty/GITrepo/visualizer/build/visualizer

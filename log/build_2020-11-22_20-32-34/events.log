@@ -1,0 +1,169 @@
+[0.000000] (-) TimerEvent: {}
+[0.000406] (visualizer) JobQueued: {'identifier': 'visualizer', 'dependencies': OrderedDict()}
+[0.001074] (visualizer) JobStarted: {'identifier': 'visualizer'}
+[0.021699] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'cmake'}
+[0.022924] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'build'}
+[0.024222] (visualizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rusty/GITrepo/visualizer/build/visualizer', '--', '-j8', '-l8'], 'cwd': '/home/rusty/GITrepo/visualizer/build/visualizer', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rusty'), ('SSH_AGENT_PID', '2022'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib:/home/rusty/turtlbot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rusty'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1839'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install:/home/rusty/turtlbot3_ws/install:/home/rusty/MonoVO/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rusty'), ('JOURNAL_STREAM', '9:33230'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rusty'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/rusty/turtlbot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/rusty/.cargo/bin:/home/rusty/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rusty-virtual-machine:@/tmp/.ICE-unix/2106,unix/rusty-virtual-machine:/tmp/.ICE-unix/2106'), ('INVOCATION_ID', 'a8baf65f086e482d9f5ebb37125ee7a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d7947b83_0016_4ee9_8874_7ed1e4f2c13d'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.79'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rusty/GITrepo/visualizer/build/visualizer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rusty/turtlbot3_ws/build/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/build/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy')]), 'shell': False}
+[0.099585] (-) TimerEvent: {}
+[0.105917] (visualizer) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target visualizer\x1b[0m\n'}
+[0.106227] (visualizer) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target sub\x1b[0m\n'}
+[0.139387] (visualizer) StdoutLine: {'line': b'[ 33%] Built target talker\n'}
+[0.160199] (visualizer) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o\x1b[0m\n'}
+[0.173482] (visualizer) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o\x1b[0m\n'}
+[0.199672] (-) TimerEvent: {}
+[0.300082] (-) TimerEvent: {}
+[0.400530] (-) TimerEvent: {}
+[0.500958] (-) TimerEvent: {}
+[0.601387] (-) TimerEvent: {}
+[0.701825] (-) TimerEvent: {}
+[0.802265] (-) TimerEvent: {}
+[0.902707] (-) TimerEvent: {}
+[1.003155] (-) TimerEvent: {}
+[1.103617] (-) TimerEvent: {}
+[1.204043] (-) TimerEvent: {}
+[1.304485] (-) TimerEvent: {}
+[1.404936] (-) TimerEvent: {}
+[1.505418] (-) TimerEvent: {}
+[1.605890] (-) TimerEvent: {}
+[1.706346] (-) TimerEvent: {}
+[1.806805] (-) TimerEvent: {}
+[1.907305] (-) TimerEvent: {}
+[2.007791] (-) TimerEvent: {}
+[2.108352] (-) TimerEvent: {}
+[2.208801] (-) TimerEvent: {}
+[2.309289] (-) TimerEvent: {}
+[2.409866] (-) TimerEvent: {}
+[2.510317] (-) TimerEvent: {}
+[2.610771] (-) TimerEvent: {}
+[2.661926] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[2.662284] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[2.662452] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[2.662612] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[2.662771] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[2.662931] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[2.663089] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[2.663279] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[2.663452] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[2.663612] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[2.663772] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:18\x1b[m\x1b[K:\n'}
+[2.663931] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.664102] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:37:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kpose\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.664270] (visualizer) StderrLine: {'line': b'   37 |     RCLCPP_INFO(this->get_logger(), "I heard: \'%s\'", msg->\x1b[01;31m\x1b[Kpose\x1b[m\x1b[K.x);\n'}
+[2.664432] (visualizer) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[2.710891] (-) TimerEvent: {}
+[2.811325] (-) TimerEvent: {}
+[2.911772] (-) TimerEvent: {}
+[3.012248] (-) TimerEvent: {}
+[3.112805] (-) TimerEvent: {}
+[3.213256] (-) TimerEvent: {}
+[3.313705] (-) TimerEvent: {}
+[3.414146] (-) TimerEvent: {}
+[3.514594] (-) TimerEvent: {}
+[3.615053] (-) TimerEvent: {}
+[3.715527] (-) TimerEvent: {}
+[3.815969] (-) TimerEvent: {}
+[3.916446] (-) TimerEvent: {}
+[4.016947] (-) TimerEvent: {}
+[4.117414] (-) TimerEvent: {}
+[4.217891] (-) TimerEvent: {}
+[4.318351] (-) TimerEvent: {}
+[4.418809] (-) TimerEvent: {}
+[4.519302] (-) TimerEvent: {}
+[4.619752] (-) TimerEvent: {}
+[4.720209] (-) TimerEvent: {}
+[4.757083] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::MinimalSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.757354] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:32:7:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KnumCallbackCalled\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.757519] (visualizer) StderrLine: {'line': b'   32 |   int \x1b[01;35m\x1b[KnumCallbackCalled\x1b[m\x1b[K = 0;\n'}
+[4.757680] (visualizer) StderrLine: {'line': b'      |       \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.765648] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.765823] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:71:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kscale\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.765985] (visualizer) StderrLine: {'line': b'   71 |     double \x1b[01;35m\x1b[Kscale\x1b[m\x1b[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));\n'}
+[4.766146] (visualizer) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.766304] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:75:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ky\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.766465] (visualizer) StderrLine: {'line': b'   75 |     float \x1b[01;35m\x1b[Ky\x1b[m\x1b[K = msg->position.y;\n'}
+[4.766632] (visualizer) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[4.820286] (-) TimerEvent: {}
+[4.920630] (-) TimerEvent: {}
+[5.021058] (-) TimerEvent: {}
+[5.121495] (-) TimerEvent: {}
+[5.221936] (-) TimerEvent: {}
+[5.224691] (visualizer) StderrLine: {'line': b'make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1\n'}
+[5.225076] (visualizer) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2\n'}
+[5.225298] (visualizer) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[5.322080] (-) TimerEvent: {}
+[5.422517] (-) TimerEvent: {}
+[5.522978] (-) TimerEvent: {}
+[5.623472] (-) TimerEvent: {}
+[5.723927] (-) TimerEvent: {}
+[5.824369] (-) TimerEvent: {}
+[5.924917] (-) TimerEvent: {}
+[6.025371] (-) TimerEvent: {}
+[6.125826] (-) TimerEvent: {}
+[6.226287] (-) TimerEvent: {}
+[6.326754] (-) TimerEvent: {}
+[6.427213] (-) TimerEvent: {}
+[6.527701] (-) TimerEvent: {}
+[6.628156] (-) TimerEvent: {}
+[6.728608] (-) TimerEvent: {}
+[6.829056] (-) TimerEvent: {}
+[6.929516] (-) TimerEvent: {}
+[7.029972] (-) TimerEvent: {}
+[7.130457] (-) TimerEvent: {}
+[7.230930] (-) TimerEvent: {}
+[7.331404] (-) TimerEvent: {}
+[7.431877] (-) TimerEvent: {}
+[7.532351] (-) TimerEvent: {}
+[7.632822] (-) TimerEvent: {}
+[7.733280] (-) TimerEvent: {}
+[7.833739] (-) TimerEvent: {}
+[7.934201] (-) TimerEvent: {}
+[8.034647] (-) TimerEvent: {}
+[8.135112] (-) TimerEvent: {}
+[8.235606] (-) TimerEvent: {}
+[8.336060] (-) TimerEvent: {}
+[8.436509] (-) TimerEvent: {}
+[8.536899] (-) TimerEvent: {}
+[8.637147] (-) TimerEvent: {}
+[8.737395] (-) TimerEvent: {}
+[8.837643] (-) TimerEvent: {}
+[8.937919] (-) TimerEvent: {}
+[9.038153] (-) TimerEvent: {}
+[9.138392] (-) TimerEvent: {}
+[9.238640] (-) TimerEvent: {}
+[9.338880] (-) TimerEvent: {}
+[9.439138] (-) TimerEvent: {}
+[9.539403] (-) TimerEvent: {}
+[9.639642] (-) TimerEvent: {}
+[9.739894] (-) TimerEvent: {}
+[9.840137] (-) TimerEvent: {}
+[9.940392] (-) TimerEvent: {}
+[10.040621] (-) TimerEvent: {}
+[10.140853] (-) TimerEvent: {}
+[10.241086] (-) TimerEvent: {}
+[10.341315] (-) TimerEvent: {}
+[10.441552] (-) TimerEvent: {}
+[10.541788] (-) TimerEvent: {}
+[10.642029] (-) TimerEvent: {}
+[10.742269] (-) TimerEvent: {}
+[10.842518] (-) TimerEvent: {}
+[10.942793] (-) TimerEvent: {}
+[11.043030] (-) TimerEvent: {}
+[11.143272] (-) TimerEvent: {}
+[11.243510] (-) TimerEvent: {}
+[11.343801] (-) TimerEvent: {}
+[11.438985] (visualizer) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable visualizer\x1b[0m\n'}
+[11.443876] (-) TimerEvent: {}
+[11.544216] (-) TimerEvent: {}
+[11.644682] (-) TimerEvent: {}
+[11.745142] (-) TimerEvent: {}
+[11.845598] (-) TimerEvent: {}
+[11.946041] (-) TimerEvent: {}
+[12.046458] (-) TimerEvent: {}
+[12.146877] (-) TimerEvent: {}
+[12.247327] (-) TimerEvent: {}
+[12.347732] (-) TimerEvent: {}
+[12.353936] (visualizer) StdoutLine: {'line': b'[ 83%] Built target visualizer\n'}
+[12.355213] (visualizer) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[12.358501] (visualizer) CommandEnded: {'returncode': 2}
+[12.426933] (visualizer) JobEnded: {'identifier': 'visualizer', 'rc': 2}
+[12.437652] (-) EventReactorShutdown: {}

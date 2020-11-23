@@ -1,0 +1,36 @@
+[0.031s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.101s] [35m[1mScanning dependencies of target visualizer[0m
+[0.103s] [35m[1mScanning dependencies of target talker[0m
+[0.155s] [ 25%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher.cpp.o[0m
+[0.292s] [ 50%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[4.842s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[4.842s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:32:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.842s]    32 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) const
+[4.842s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[5.323s] [ 75%] [32m[1mLinking CXX executable talker[0m
+[5.591s] [ 75%] Built target talker
+[11.275s] [100%] [32m[1mLinking CXX executable visualizer[0m
+[11.743s] [100%] Built target visualizer
+[11.763s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[11.823s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/rusty/GITrepo/visualizer/build/visualizer
+[11.835s] -- Install configuration: ""
+[11.836s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker
+[11.839s] -- Set runtime path of "/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker" to ""
+[11.839s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer
+[11.845s] -- Set runtime path of "/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer" to ""
+[11.845s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/package_run_dependencies/visualizer
+[11.845s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/parent_prefix_path/visualizer
+[11.846s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.sh
+[11.846s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.dsv
+[11.846s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.sh
+[11.846s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.dsv
+[11.847s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.bash
+[11.847s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.sh
+[11.847s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.zsh
+[11.847s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.dsv
+[11.847s] -- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.dsv
+[11.847s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/packages/visualizer
+[11.848s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig.cmake
+[11.848s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig-version.cmake
+[11.849s] -- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.xml
+[11.852s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --install /home/rusty/GITrepo/visualizer/build/visualizer

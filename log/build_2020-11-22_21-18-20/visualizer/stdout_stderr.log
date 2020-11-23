@@ -1,0 +1,35 @@
+[35m[1mScanning dependencies of target visualizer[0m
+[ 50%] Built target talker
+[ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:39:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   39 |   int [01;35m[KnumCallbackCalled[m[K = 0;
+      |       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   74 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+      |            [01;35m[K^~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:78:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   78 |     float [01;35m[Ky[m[K = msg->position.y;
+      |           [01;35m[K^[m[K
+[100%] [32m[1mLinking CXX executable visualizer[0m
+[100%] Built target visualizer
+-- Install configuration: ""
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker
+-- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer
+-- Set runtime path of "/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer" to ""
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/package_run_dependencies/visualizer
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/parent_prefix_path/visualizer
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.sh
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.sh
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.dsv
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.bash
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.sh
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.zsh
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.dsv
+-- Installing: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.dsv
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/packages/visualizer
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig.cmake
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig-version.cmake
+-- Up-to-date: /home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.xml

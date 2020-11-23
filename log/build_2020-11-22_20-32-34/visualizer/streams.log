@@ -1,0 +1,39 @@
+[0.035s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.105s] [35m[1mScanning dependencies of target visualizer[0m
+[0.105s] [35m[1mScanning dependencies of target sub[0m
+[0.138s] [ 33%] Built target talker
+[0.159s] [ 50%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[0.172s] [ 66%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[2.661s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[2.661s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[2.661s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[2.661s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[2.662s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[2.663s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:18[m[K:
+[2.663s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr) const[m[K’:
+[2.663s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:37:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[2.663s]    37 |     RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->[01;31m[Kpose[m[K.x);
+[2.663s]       |                                                           [01;31m[K^~~~[m[K
+[4.756s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.756s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:32:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.756s]    32 |   int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.757s]       |       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.764s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.765s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:71:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.765s]    71 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+[4.765s]       |            [01;35m[K^~~~~[m[K
+[4.765s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:75:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.765s]    75 |     float [01;35m[Ky[m[K = msg->position.y;
+[4.765s]       |           [01;35m[K^[m[K
+[5.224s] make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1
+[5.224s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2
+[5.224s] make[1]: *** Waiting for unfinished jobs....
+[11.438s] [ 83%] [32m[1mLinking CXX executable visualizer[0m
+[12.353s] [ 83%] Built target visualizer
+[12.354s] make: *** [Makefile:141: all] Error 2
+[12.358s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

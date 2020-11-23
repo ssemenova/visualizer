@@ -1,0 +1,657 @@
+[0.000000] (-) TimerEvent: {}
+[0.000625] (visualizer) JobQueued: {'identifier': 'visualizer', 'dependencies': OrderedDict()}
+[0.001100] (visualizer) JobStarted: {'identifier': 'visualizer'}
+[0.023911] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'cmake'}
+[0.025723] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'build'}
+[0.027533] (visualizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rusty/GITrepo/visualizer/build/visualizer', '--', '-j8', '-l8'], 'cwd': '/home/rusty/GITrepo/visualizer/build/visualizer', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rusty'), ('SSH_AGENT_PID', '2022'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib:/home/rusty/turtlbot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rusty'), ('OLDPWD', '/home/rusty/GITrepo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1839'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install:/home/rusty/turtlbot3_ws/install:/home/rusty/GITrepo/MonoVO/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rusty'), ('JOURNAL_STREAM', '9:33230'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rusty'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/rusty/turtlbot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/rusty/.cargo/bin:/home/rusty/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rusty-virtual-machine:@/tmp/.ICE-unix/2106,unix/rusty-virtual-machine:/tmp/.ICE-unix/2106'), ('INVOCATION_ID', 'a8baf65f086e482d9f5ebb37125ee7a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/883a31a0_9916_4f51_afef_a7e5f44d6e85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.79'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/GITrepo/MonoVO/install/MonoVO:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rusty/GITrepo/visualizer/build/visualizer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rusty/turtlbot3_ws/build/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/build/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/GITrepo/MonoVO/install/MonoVO:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy')]), 'shell': False}
+[0.099555] (-) TimerEvent: {}
+[0.106876] (visualizer) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target visualizer\x1b[0m\n'}
+[0.137439] (visualizer) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.181035] (visualizer) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o\x1b[0m\n'}
+[0.199627] (-) TimerEvent: {}
+[0.300028] (-) TimerEvent: {}
+[0.400453] (-) TimerEvent: {}
+[0.500768] (-) TimerEvent: {}
+[0.601070] (-) TimerEvent: {}
+[0.701405] (-) TimerEvent: {}
+[0.801713] (-) TimerEvent: {}
+[0.902043] (-) TimerEvent: {}
+[1.002574] (-) TimerEvent: {}
+[1.103041] (-) TimerEvent: {}
+[1.203518] (-) TimerEvent: {}
+[1.303996] (-) TimerEvent: {}
+[1.404463] (-) TimerEvent: {}
+[1.504917] (-) TimerEvent: {}
+[1.605374] (-) TimerEvent: {}
+[1.705808] (-) TimerEvent: {}
+[1.806097] (-) TimerEvent: {}
+[1.906356] (-) TimerEvent: {}
+[2.006643] (-) TimerEvent: {}
+[2.106959] (-) TimerEvent: {}
+[2.207324] (-) TimerEvent: {}
+[2.307629] (-) TimerEvent: {}
+[2.407882] (-) TimerEvent: {}
+[2.508166] (-) TimerEvent: {}
+[2.608485] (-) TimerEvent: {}
+[2.708905] (-) TimerEvent: {}
+[2.809199] (-) TimerEvent: {}
+[2.909511] (-) TimerEvent: {}
+[3.009838] (-) TimerEvent: {}
+[3.110218] (-) TimerEvent: {}
+[3.210584] (-) TimerEvent: {}
+[3.310897] (-) TimerEvent: {}
+[3.411175] (-) TimerEvent: {}
+[3.511489] (-) TimerEvent: {}
+[3.611776] (-) TimerEvent: {}
+[3.712072] (-) TimerEvent: {}
+[3.812335] (-) TimerEvent: {}
+[3.912599] (-) TimerEvent: {}
+[4.012888] (-) TimerEvent: {}
+[4.113221] (-) TimerEvent: {}
+[4.213571] (-) TimerEvent: {}
+[4.313910] (-) TimerEvent: {}
+[4.414176] (-) TimerEvent: {}
+[4.514449] (-) TimerEvent: {}
+[4.614714] (-) TimerEvent: {}
+[4.707163] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::MinimalSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.707465] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KnumCallbackCalled\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.707638] (visualizer) StderrLine: {'line': b'   33 |  int \x1b[01;35m\x1b[KnumCallbackCalled\x1b[m\x1b[K = 0;\n'}
+[4.707796] (visualizer) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.712118] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.712421] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:59:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.712787] (visualizer) StderrLine: {'line': b'   59 |   last_frame = cv::imread(frame_paths[numCallbackCalled]\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.713024] (visualizer) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.713184] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3724\x1b[m\x1b[K,\n'}
+[4.713343] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.713502] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.713687] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.713858] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.714018] (visualizer) StderrLine: {'line': b' 1405 | Mat& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::operator = (Mat&& m)\n'}
+[4.714176] (visualizer) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.714333] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:63:56:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.714496] (visualizer) StderrLine: {'line': b'   63 |  curr_frame = cv::imread(frame_paths[numCallbackCalled]\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[4.714654] (visualizer) StderrLine: {'line': b'      |                                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.714804] (-) TimerEvent: {}
+[4.714954] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3724\x1b[m\x1b[K,\n'}
+[4.715128] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.715302] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.715461] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.715619] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.715780] (visualizer) StderrLine: {'line': b' 1405 | Mat& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::operator = (Mat&& m)\n'}
+[4.716038] (visualizer) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.716197] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.716358] (visualizer) StderrLine: {'line': b'   66 |     std::\x1b[01;31m\x1b[Kdouble\x1b[m\x1b[K scale = getAbsoluteScale(numCallbackCalled, 0, t.at<std::double>(2));\n'}
+[4.716517] (visualizer) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.716675] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:68:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kscale\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kscalb\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.716845] (visualizer) StderrLine: {'line': b'   68 |     traj_t = traj_t + \x1b[01;31m\x1b[Kscale\x1b[m\x1b[K*(traj_R*t);\n'}
+[4.717003] (visualizer) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[4.717189] (visualizer) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Kscalb\x1b[m\x1b[K\n'}
+[4.717427] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:68:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktm\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.717602] (visualizer) StderrLine: {'line': b'   68 |     traj_t = traj_t + scale*(traj_R*\x1b[01;31m\x1b[Kt\x1b[m\x1b[K);\n'}
+[4.717795] (visualizer) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.717956] (visualizer) StderrLine: {'line': b'      |                                     \x1b[32m\x1b[Ktm\x1b[m\x1b[K\n'}
+[4.718541] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.718846] (visualizer) StderrLine: {'line': b'   69 |     traj_R = \x1b[01;31m\x1b[KR\x1b[m\x1b[K*traj_R;\n'}
+[4.719007] (visualizer) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.723002] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[4.723183] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.\x1b[01;31m\x1b[Kat<std::double>\x1b[m\x1b[K(0,3));\n'}
+[4.723342] (visualizer) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.723515] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at<<expression error> >(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.723676] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.724102] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.724264] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.724425] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.724586] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.724746] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.724907] (visualizer) StderrLine: {'line': b' 1911 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0);\n'}
+[4.725080] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.725239] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.725400] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.725560] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.725763] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.725927] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.726088] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.726248] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.726408] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.726570] (visualizer) StderrLine: {'line': b' 1915 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.726731] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.726890] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.727051] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.727212] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.727371] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.727530] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.727689] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.727849] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.728015] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.728190] (visualizer) StderrLine: {'line': b' 1920 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col);\n'}
+[4.728349] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.728508] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.728680] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.728843] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.729003] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.729162] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.729322] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.729483] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.729643] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.729838] (visualizer) StderrLine: {'line': b' 1925 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.730001] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.730161] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.730335] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.730498] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.730670] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.730830] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.730997] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.731160] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.731320] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.731482] (visualizer) StderrLine: {'line': b' 1932 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.731641] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.731800] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.731960] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.732132] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.732291] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.732450] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.732609] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.732768] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.732927] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.733088] (visualizer) StderrLine: {'line': b' 1938 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.733248] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.733407] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.733567] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.733746] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.733908] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.734075] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.734235] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.734395] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.734555] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.734717] (visualizer) StderrLine: {'line': b' 1943 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.734877] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.735082] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.735245] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.735406] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.735566] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.735725] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.735884] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.736044] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.736216] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.736378] (visualizer) StderrLine: {'line': b' 1947 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.736537] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.736696] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.736857] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.737017] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.737188] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.737347] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.737518] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.737704] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.737874] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.738044] (visualizer) StderrLine: {'line': b' 1950 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.738204] (visualizer) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.738362] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.738522] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.738682] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.738841] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.738999] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.739157] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.739316] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.739474] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.739635] (visualizer) StderrLine: {'line': b' 1952 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.739796] (visualizer) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.739954] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.740126] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.740285] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.740443] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.740600] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.740756] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.740914] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.741080] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.741251] (visualizer) StderrLine: {'line': b' 1958 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.741411] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.741568] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.741763] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.741926] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.742084] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.742242] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.742400] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.742559] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.742717] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.742878] (visualizer) StderrLine: {'line': b' 1963 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.743241] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.743477] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.743638] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.743798] (visualizer) StderrLine: {'line': b'   73 |  int x_truth = int(gt.at<std::double>(0,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.743956] (visualizer) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.744113] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[4.744286] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.\x1b[01;31m\x1b[Kat<std::double>\x1b[m\x1b[K(2,3));\n'}
+[4.744457] (visualizer) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.744627] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at<<expression error> >(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.744788] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.744946] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.745115] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.745274] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.745432] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.745591] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.745799] (visualizer) StderrLine: {'line': b' 1911 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0);\n'}
+[4.745960] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.746118] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.746277] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.746436] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.746593] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.746750] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.746909] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.747066] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.747223] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.747383] (visualizer) StderrLine: {'line': b' 1915 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.747541] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.747698] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.747869] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.748039] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.748196] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.748365] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.748523] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.748680] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.748838] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.748997] (visualizer) StderrLine: {'line': b' 1920 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col);\n'}
+[4.749155] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.749313] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.749471] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.749630] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.749810] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.749969] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.750126] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.750284] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.750442] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.750602] (visualizer) StderrLine: {'line': b' 1925 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.750760] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.750918] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.751100] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.751272] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.751430] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.751588] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.751746] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.751903] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.752061] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.752221] (visualizer) StderrLine: {'line': b' 1932 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.752390] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.752548] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.752707] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.752865] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.753022] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.753179] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.753337] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.753494] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.753651] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.753846] (visualizer) StderrLine: {'line': b' 1938 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.754023] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.754183] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.754342] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.754501] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.754658] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.754815] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.754981] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.755142] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.755301] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.755460] (visualizer) StderrLine: {'line': b' 1943 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.755618] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.755775] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.755934] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.756093] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.756266] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.756424] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.756582] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.756740] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.756898] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.757057] (visualizer) StderrLine: {'line': b' 1947 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.757216] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.757373] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.757532] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.757716] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.757897] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.758066] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.758238] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.758397] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.758556] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.758716] (visualizer) StderrLine: {'line': b' 1950 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.758874] (visualizer) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.759033] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.759201] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.759359] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.759517] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.759675] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.759832] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.759990] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.760148] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.760331] (visualizer) StderrLine: {'line': b' 1952 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.760492] (visualizer) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.760649] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.760808] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.760973] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.761133] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.761291] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.761449] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.761607] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.761813] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.761976] (visualizer) StderrLine: {'line': b' 1958 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.762135] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.762294] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.762454] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.762613] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.762771] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.762928] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.763086] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.763244] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.763402] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.763562] (visualizer) StderrLine: {'line': b' 1963 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.763720] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.763878] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.764045] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.764217] (visualizer) StderrLine: {'line': b'   74 |  int z_truth = -int(gt.at<std::double>(2,3\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.764375] (visualizer) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.764532] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[4.764704] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.\x1b[01;31m\x1b[Kat<std::double>\x1b[m\x1b[K(0));\n'}
+[4.764875] (visualizer) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.765046] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at<<expression error> >(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.765207] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.765364] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.765522] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.765708] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.765875] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.766035] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.766195] (visualizer) StderrLine: {'line': b' 1911 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0);\n'}
+[4.766365] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.766524] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.766684] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.766843] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.767001] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.767158] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.767316] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.767474] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.767642] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.767804] (visualizer) StderrLine: {'line': b' 1915 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.767962] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.768127] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.768298] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.768457] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.768615] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.768772] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.768929] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.769087] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.769245] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.769403] (visualizer) StderrLine: {'line': b' 1920 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col);\n'}
+[4.769561] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.769760] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.769924] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.770083] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.770241] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.770398] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.770555] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.770713] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.770870] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.771029] (visualizer) StderrLine: {'line': b' 1925 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.771187] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.771344] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.771517] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.771676] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.771848] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.772014] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.772172] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.772341] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.772499] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.772669] (visualizer) StderrLine: {'line': b' 1932 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.772827] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.772984] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.773439] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.773599] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.773787] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.773945] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.774102] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.774258] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.774414] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.774573] (visualizer) StderrLine: {'line': b' 1938 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.774729] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.774885] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.775056] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.775215] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.775371] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.775526] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.775682] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.775838] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.775995] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.776153] (visualizer) StderrLine: {'line': b' 1943 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.776318] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.776516] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.776675] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.776833] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.776989] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.777145] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.777301] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.777457] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.777614] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.777821] (visualizer) StderrLine: {'line': b' 1947 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.777981] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.778137] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.778295] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.778452] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.778622] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.778778] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.778935] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.779104] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.779261] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.779430] (visualizer) StderrLine: {'line': b' 1950 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.779589] (visualizer) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.779745] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.779902] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.780068] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.780224] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.780380] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.780548] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.780705] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.780862] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.781021] (visualizer) StderrLine: {'line': b' 1952 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.781177] (visualizer) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.781333] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.781490] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.781647] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.781829] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.781987] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.782143] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.782300] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.782457] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.782615] (visualizer) StderrLine: {'line': b' 1958 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.782771] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.782927] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.783093] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.783250] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.783406] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.783563] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.783719] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.783876] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.784032] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.784191] (visualizer) StderrLine: {'line': b' 1963 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.784360] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.784517] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.784674] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.784832] (visualizer) StderrLine: {'line': b'   76 |  int x = int(traj_t.at<std::double>(0\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.785001] (visualizer) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.785161] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[4.785342] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.\x1b[01;31m\x1b[Kat<std::double>\x1b[m\x1b[K(2));\n'}
+[4.785500] (visualizer) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.785686] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat::at<<expression error> >(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.785871] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.786029] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.786185] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.786341] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.786498] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.786655] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.786813] (visualizer) StderrLine: {'line': b' 1911 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0);\n'}
+[4.786969] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.787125] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.787284] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.787441] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.787597] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.787753] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.787910] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.788075] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.788232] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.788402] (visualizer) StderrLine: {'line': b' 1915 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0=0) const;\n'}
+[4.788559] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.788715] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.788872] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.789030] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.789186] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.789342] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.789498] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.789654] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.789845] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.790004] (visualizer) StderrLine: {'line': b' 1920 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col);\n'}
+[4.790161] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.790316] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.790474] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.790631] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.790788] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.790943] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.791107] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.791263] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.791419] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.791589] (visualizer) StderrLine: {'line': b' 1925 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int row, int col) const;\n'}
+[4.791747] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.791903] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.792061] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.792243] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.792400] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.792570] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.792727] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.792884] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.793041] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.793199] (visualizer) StderrLine: {'line': b' 1932 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2);\n'}
+[4.793355] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.793512] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.793704] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.793871] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.794030] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.794186] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.794343] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.794499] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.794655] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.794813] (visualizer) StderrLine: {'line': b' 1938 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(int i0, int i1, int i2) const;\n'}
+[4.794977] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.795137] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.795295] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.795452] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.795609] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.795765] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.795921] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.796077] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.796246] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.796405] (visualizer) StderrLine: {'line': b' 1943 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx);\n'}
+[4.796562] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.796718] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.796876] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.797033] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.797189] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.797345] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.797502] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.797670] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.797836] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.798017] (visualizer) StderrLine: {'line': b' 1947 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const int* idx) const;\n'}
+[4.798177] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.798333] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.798491] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.798648] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.798804] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.798960] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.799130] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.799288] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.799459] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.799618] (visualizer) StderrLine: {'line': b' 1950 |     template<typename _Tp, int n> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx);\n'}
+[4.799776] (visualizer) StderrLine: {'line': b'      |                                        \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.799931] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.800101] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.800259] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.800415] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.800571] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.800727] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.800884] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.801050] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.801209] (visualizer) StderrLine: {'line': b' 1952 |     template<typename _Tp, int n> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(const Vec<int, n>& idx) const;\n'}
+[4.801366] (visualizer) StderrLine: {'line': b'      |                                              \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.801522] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.801702] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.801869] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.802025] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.802181] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.802337] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.802493] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.802650] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.802809] (visualizer) StderrLine: {'line': b' 1958 |     template<typename _Tp> _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt);\n'}
+[4.802964] (visualizer) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.803120] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.803278] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.803435] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.803590] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.803746] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.803902] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.804089] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.804248] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.804407] (visualizer) StderrLine: {'line': b' 1963 |     template<typename _Tp> const _Tp& \x1b[01;36m\x1b[Kat\x1b[m\x1b[K(Point pt) const;\n'}
+[4.804564] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[4.804721] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.804878] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.805049] (visualizer) StderrLine: {'line': b'   77 |  int z = -int(traj_t.at<std::double>(2\x1b[01;31m\x1b[K)\x1b[m\x1b[K);\n'}
+[4.805206] (visualizer) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.805362] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:91:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kpassing \xe2\x80\x98\x1b[01m\x1b[Kconst cv::Mat\x1b[m\x1b[K\xe2\x80\x99 as \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 argument discards qualifiers [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.805537] (visualizer) StderrLine: {'line': b'   91 |  last_frame = \x1b[01;31m\x1b[Kcurr_frame\x1b[m\x1b[K;\n'}
+[4.805707] (visualizer) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.805870] (visualizer) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.hpp:3724\x1b[m\x1b[K,\n'}
+[4.806040] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/core.hpp:59\x1b[m\x1b[K,\n'}
+[4.806198] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:52\x1b[m\x1b[K,\n'}
+[4.806355] (visualizer) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3\x1b[m\x1b[K:\n'}
+[4.806511] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:743:6:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  in call to \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat& cv::Mat::operator=(const cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.806669] (visualizer) StderrLine: {'line': b'  743 | Mat& \x1b[01;36m\x1b[KMat\x1b[m\x1b[K::operator = (const Mat& m)\n'}
+[4.806826] (visualizer) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.806982] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:92:2:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kincrement of member \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::numCallbackCalled\x1b[m\x1b[K\xe2\x80\x99 in read-only object\n'}
+[4.807140] (visualizer) StderrLine: {'line': b'   92 |  \x1b[01;31m\x1b[KnumCallbackCalled\x1b[m\x1b[K++;\n'}
+[4.807296] (visualizer) StderrLine: {'line': b'      |  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.807451] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.807610] (visualizer) StderrLine: {'line': b'   55 |   void topic_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::String::SharedPtr msg\x1b[m\x1b[K) const\n'}
+[4.807766] (visualizer) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.814898] (-) TimerEvent: {}
+[4.915144] (-) TimerEvent: {}
+[5.015406] (-) TimerEvent: {}
+[5.115714] (-) TimerEvent: {}
+[5.216052] (-) TimerEvent: {}
+[5.316337] (-) TimerEvent: {}
+[5.416582] (-) TimerEvent: {}
+[5.516846] (-) TimerEvent: {}
+[5.617102] (-) TimerEvent: {}
+[5.717358] (-) TimerEvent: {}
+[5.817631] (-) TimerEvent: {}
+[5.917912] (-) TimerEvent: {}
+[6.018188] (-) TimerEvent: {}
+[6.118457] (-) TimerEvent: {}
+[6.218731] (-) TimerEvent: {}
+[6.318993] (-) TimerEvent: {}
+[6.419236] (-) TimerEvent: {}
+[6.519494] (-) TimerEvent: {}
+[6.619745] (-) TimerEvent: {}
+[6.720010] (-) TimerEvent: {}
+[6.820260] (-) TimerEvent: {}
+[6.920500] (-) TimerEvent: {}
+[7.020782] (-) TimerEvent: {}
+[7.121161] (-) TimerEvent: {}
+[7.221524] (-) TimerEvent: {}
+[7.321858] (-) TimerEvent: {}
+[7.422124] (-) TimerEvent: {}
+[7.522459] (-) TimerEvent: {}
+[7.622729] (-) TimerEvent: {}
+[7.723005] (-) TimerEvent: {}
+[7.823274] (-) TimerEvent: {}
+[7.923549] (-) TimerEvent: {}
+[8.023823] (-) TimerEvent: {}
+[8.124145] (-) TimerEvent: {}
+[8.224526] (-) TimerEvent: {}
+[8.297544] (visualizer) StderrLine: {'line': b'make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1\n'}
+[8.297981] (visualizer) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2\n'}
+[8.298415] (visualizer) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.301818] (visualizer) CommandEnded: {'returncode': 2}
+[8.324731] (-) TimerEvent: {}
+[8.368145] (visualizer) JobEnded: {'identifier': 'visualizer', 'rc': 2}
+[8.384806] (-) EventReactorShutdown: {}

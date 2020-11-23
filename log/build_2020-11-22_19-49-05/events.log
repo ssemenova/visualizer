@@ -1,0 +1,120 @@
+[0.000000] (-) TimerEvent: {}
+[0.000332] (visualizer) JobQueued: {'identifier': 'visualizer', 'dependencies': OrderedDict()}
+[0.000939] (visualizer) JobStarted: {'identifier': 'visualizer'}
+[0.022500] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'cmake'}
+[0.023804] (visualizer) JobProgress: {'identifier': 'visualizer', 'progress': 'build'}
+[0.024996] (visualizer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rusty/GITrepo/visualizer/build/visualizer', '--', '-j8', '-l8'], 'cwd': '/home/rusty/GITrepo/visualizer/build/visualizer', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'rusty'), ('SSH_AGENT_PID', '2022'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib:/home/rusty/turtlbot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/rusty'), ('OLDPWD', '/home/rusty/GITrepo'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1839'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install:/home/rusty/turtlbot3_ws/install:/home/rusty/GITrepo/MonoVO/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'rusty'), ('JOURNAL_STREAM', '9:33230'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rusty'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/rusty/turtlbot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/rusty/.cargo/bin:/home/rusty/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/rusty-virtual-machine:@/tmp/.ICE-unix/2106,unix/rusty-virtual-machine:/tmp/.ICE-unix/2106'), ('INVOCATION_ID', 'a8baf65f086e482d9f5ebb37125ee7a1'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/883a31a0_9916_4f51_afef_a7e5f44d6e85'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.79'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/GITrepo/MonoVO/install/MonoVO:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rusty/GITrepo/visualizer/build/visualizer'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/rusty/turtlbot3_ws/build/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/build/turtlebot3_example:/home/rusty/turtlbot3_ws/install/turtlebot3_example/lib/python3.8/site-packages:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/rusty/GITrepo/visualizer/install/visualizer:/home/rusty/GITrepo/MonoVO/install/MonoVO:/home/rusty/turtlbot3_ws/install/turtlebot3_simulations:/home/rusty/turtlbot3_ws/install/turtlebot3_gazebo:/home/rusty/turtlbot3_ws/install/turtlebot3:/home/rusty/turtlbot3_ws/install/turtlebot3_bringup:/home/rusty/turtlbot3_ws/install/turtlebot3_node:/home/rusty/turtlbot3_ws/install/turtlebot3_navigation2:/home/rusty/turtlbot3_ws/install/turtlebot3_fake_node:/home/rusty/turtlbot3_ws/install/turtlebot3_msgs:/home/rusty/turtlbot3_ws/install/turtlebot3_description:/home/rusty/turtlbot3_ws/install/turtlebot3_cartographer:/home/rusty/turtlbot3_ws/install/hls_lfcd_lds_driver:/home/rusty/turtlbot3_ws/install/dynamixel_sdk:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy')]), 'shell': False}
+[0.099678] (-) TimerEvent: {}
+[0.102848] (visualizer) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target visualizer\x1b[0m\n'}
+[0.139965] (visualizer) StdoutLine: {'line': b'[ 50%] Built target talker\n'}
+[0.166500] (visualizer) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o\x1b[0m\n'}
+[0.199730] (-) TimerEvent: {}
+[0.299999] (-) TimerEvent: {}
+[0.400243] (-) TimerEvent: {}
+[0.500501] (-) TimerEvent: {}
+[0.600739] (-) TimerEvent: {}
+[0.700998] (-) TimerEvent: {}
+[0.801295] (-) TimerEvent: {}
+[0.901538] (-) TimerEvent: {}
+[1.001791] (-) TimerEvent: {}
+[1.102033] (-) TimerEvent: {}
+[1.202275] (-) TimerEvent: {}
+[1.302520] (-) TimerEvent: {}
+[1.402777] (-) TimerEvent: {}
+[1.503022] (-) TimerEvent: {}
+[1.603259] (-) TimerEvent: {}
+[1.703519] (-) TimerEvent: {}
+[1.803817] (-) TimerEvent: {}
+[1.904060] (-) TimerEvent: {}
+[2.004309] (-) TimerEvent: {}
+[2.104559] (-) TimerEvent: {}
+[2.204794] (-) TimerEvent: {}
+[2.305038] (-) TimerEvent: {}
+[2.405281] (-) TimerEvent: {}
+[2.505533] (-) TimerEvent: {}
+[2.605777] (-) TimerEvent: {}
+[2.706011] (-) TimerEvent: {}
+[2.806254] (-) TimerEvent: {}
+[2.906506] (-) TimerEvent: {}
+[3.006742] (-) TimerEvent: {}
+[3.106972] (-) TimerEvent: {}
+[3.207208] (-) TimerEvent: {}
+[3.307456] (-) TimerEvent: {}
+[3.407683] (-) TimerEvent: {}
+[3.507912] (-) TimerEvent: {}
+[3.608141] (-) TimerEvent: {}
+[3.708456] (-) TimerEvent: {}
+[3.808833] (-) TimerEvent: {}
+[3.909063] (-) TimerEvent: {}
+[4.009302] (-) TimerEvent: {}
+[4.109545] (-) TimerEvent: {}
+[4.209773] (-) TimerEvent: {}
+[4.310015] (-) TimerEvent: {}
+[4.410251] (-) TimerEvent: {}
+[4.510494] (-) TimerEvent: {}
+[4.610724] (-) TimerEvent: {}
+[4.710953] (-) TimerEvent: {}
+[4.760188] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMinimalSubscriber::MinimalSubscriber()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.760487] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[KnumCallbackCalled\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.760659] (visualizer) StderrLine: {'line': b'   33 |  int \x1b[01;35m\x1b[KnumCallbackCalled\x1b[m\x1b[K = 0;\n'}
+[4.760819] (visualizer) StderrLine: {'line': b'      |      \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.769021] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.769199] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:59:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Ktm\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.769368] (visualizer) StderrLine: {'line': b'   66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, \x1b[01;31m\x1b[Kt\x1b[m\x1b[K.at<double>(2));\n'}
+[4.769527] (visualizer) StderrLine: {'line': b'      |                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.769685] (visualizer) StderrLine: {'line': b'      |                                                           \x1b[32m\x1b[Ktm\x1b[m\x1b[K\n'}
+[4.769843] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:64:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.770004] (visualizer) StderrLine: {'line': b'   66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, t.at<\x1b[01;31m\x1b[Kdouble\x1b[m\x1b[K>(2));\n'}
+[4.770163] (visualizer) StderrLine: {'line': b'      |                                                                \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[4.776513] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KgetAbsoluteScale\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.776689] (visualizer) StderrLine: {'line': b'   66 |     double scale = \x1b[01;31m\x1b[KgetAbsoluteScale\x1b[m\x1b[K(numCallbackCalled, 0, t.at<double>(2));\n'}
+[4.776850] (visualizer) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.778964] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KR\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.779133] (visualizer) StderrLine: {'line': b'   69 |     traj_R = \x1b[01;31m\x1b[KR\x1b[m\x1b[K*traj_R;\n'}
+[4.779292] (visualizer) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.780681] (visualizer) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[4.780868] (visualizer) StderrLine: {'line': b'   55 |   void topic_callback(\x1b[01;35m\x1b[Kconst std_msgs::msg::String::SharedPtr msg\x1b[m\x1b[K)\n'}
+[4.781028] (visualizer) StderrLine: {'line': b'      |                       \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[4.811043] (-) TimerEvent: {}
+[4.911284] (-) TimerEvent: {}
+[5.011540] (-) TimerEvent: {}
+[5.111771] (-) TimerEvent: {}
+[5.212009] (-) TimerEvent: {}
+[5.312252] (-) TimerEvent: {}
+[5.412512] (-) TimerEvent: {}
+[5.512763] (-) TimerEvent: {}
+[5.612993] (-) TimerEvent: {}
+[5.713245] (-) TimerEvent: {}
+[5.813529] (-) TimerEvent: {}
+[5.913758] (-) TimerEvent: {}
+[6.013986] (-) TimerEvent: {}
+[6.114224] (-) TimerEvent: {}
+[6.214449] (-) TimerEvent: {}
+[6.314683] (-) TimerEvent: {}
+[6.414908] (-) TimerEvent: {}
+[6.515146] (-) TimerEvent: {}
+[6.615371] (-) TimerEvent: {}
+[6.715637] (-) TimerEvent: {}
+[6.815880] (-) TimerEvent: {}
+[6.916114] (-) TimerEvent: {}
+[7.016352] (-) TimerEvent: {}
+[7.116580] (-) TimerEvent: {}
+[7.216804] (-) TimerEvent: {}
+[7.317035] (-) TimerEvent: {}
+[7.417277] (-) TimerEvent: {}
+[7.517514] (-) TimerEvent: {}
+[7.617749] (-) TimerEvent: {}
+[7.718037] (-) TimerEvent: {}
+[7.818429] (-) TimerEvent: {}
+[7.918679] (-) TimerEvent: {}
+[8.018920] (-) TimerEvent: {}
+[8.119161] (-) TimerEvent: {}
+[8.219387] (-) TimerEvent: {}
+[8.319657] (-) TimerEvent: {}
+[8.415476] (visualizer) StderrLine: {'line': b'make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1\n'}
+[8.416341] (visualizer) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2\n'}
+[8.416580] (visualizer) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.419306] (visualizer) CommandEnded: {'returncode': 2}
+[8.420445] (-) TimerEvent: {}
+[8.483522] (visualizer) JobEnded: {'identifier': 'visualizer', 'rc': 2}
+[8.495738] (-) EventReactorShutdown: {}

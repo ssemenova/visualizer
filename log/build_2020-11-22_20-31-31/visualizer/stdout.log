@@ -1,0 +1,4 @@
+[35m[1mScanning dependencies of target visualizer[0m
+[ 33%] Built target talker
+[ 66%] Built target sub
+[ 83%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m

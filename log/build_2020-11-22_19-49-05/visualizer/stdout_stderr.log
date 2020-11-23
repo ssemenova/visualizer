@@ -1,0 +1,27 @@
+[35m[1mScanning dependencies of target visualizer[0m
+[ 50%] Built target talker
+[ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   33 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+      |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, [01;31m[Kt[m[K.at<double>(2));
+      |                                                           [01;31m[K^[m[K
+      |                                                           [32m[Ktm[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, t.at<[01;31m[Kdouble[m[K>(2));
+      |                                                                [01;31m[K^~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[KgetAbsoluteScale[m[K’ was not declared in this scope
+   66 |     double scale = [01;31m[KgetAbsoluteScale[m[K(numCallbackCalled, 0, t.at<double>(2));
+      |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:14:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+   69 |     traj_R = [01;31m[KR[m[K*traj_R;
+      |              [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   55 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K)
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

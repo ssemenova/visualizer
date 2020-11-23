@@ -1,0 +1,63 @@
+[0.031s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.136s] [ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[0.137s] [ 75%] Built target talker
+[4.613s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[4.613s]    55 |   void topic_callback(const [01;31m[Kgeometry_msgs[m[K::msg::Pose::SharedPtr msg)
+[4.614s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[4.614s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[4.614s]    55 |   void topic_callback(const geometry_msgs::msg[01;31m[K::[m[KPose::SharedPtr msg)
+[4.614s]       |                                               [01;31m[K^~[m[K
+[4.614s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[4.614s]    55 |   void topic_callback[34m[K([m[Kconst geometry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KPose::SharedPtr msg)
+[4.615s]       |                      [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+[4.615s]       |                                               [32m[K)[m[K
+[4.615s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.615s]    55 |   void topic_callback(const geometry_msgs::[01;31m[Kmsg[m[K::Pose::SharedPtr msg)
+[4.615s]       |                                            [01;31m[K^~~[m[K
+[4.616s]       |                                               [32m[K;[m[K
+[4.616s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:49:[m[K [01;31m[Kerror: [m[K‘[01m[KPose[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[4.616s]    55 |   void topic_callback(const geometry_msgs::msg::[01;31m[KPose[m[K::SharedPtr msg)
+[4.616s]       |                                                 [01;31m[K^~~~[m[K
+[4.656s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:32[m[K,
+[4.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.658s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.658s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.658s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:7[m[K:
+[4.658s] /opt/ros/foxy/include/rclcpp/function_traits.hpp: In instantiation of ‘[01m[Kstruct rclcpp::function_traits::function_traits<std::_Bind<void (MinimalSubscriber::*(MinimalSubscriber*, std::_Placeholder<1>))(...)> >[m[K’:
+[4.658s] [01m[K/opt/ros/foxy/include/rclcpp/subscription_traits.hpp:97:8:[m[K   required from ‘[01m[Kstruct rclcpp::subscription_traits::has_message_type<std::_Bind<void (MinimalSubscriber::*(MinimalSubscriber*, std::_Placeholder<1>))(...)>, std::allocator<void>, void, void, void, void>[m[K’
+[4.659s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:204:5:[m[K   required by substitution of ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr) [with MessageT = std_msgs::msg::String_<std::allocator<void> >; CallbackT = std::_Bind<void (MinimalSubscriber::*(MinimalSubscriber*, std::_Placeholder<1>))(...)>; AllocatorT = std::allocator<void>; CallbackMessageT = <missing>; SubscriptionT = <missing>; MessageMemoryStrategyT = <missing>][m[K’
+[4.659s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:19:86:[m[K   required from here
+[4.659s] [01m[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:51:9:[m[K [01;31m[Kerror: [m[Kdecltype cannot resolve address of overloaded function
+[4.659s]    51 |   using [01;31m[Karguments[m[K = typename tuple_tail<
+[4.659s]       |         [01;31m[K^~~~~~~~~[m[K
+[4.660s] [01m[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:57:9:[m[K [01;31m[Kerror: [m[Kdecltype cannot resolve address of overloaded function
+[4.660s]    57 |   using [01;31m[Kargument_type[m[K = typename std::tuple_element<N, arguments>::type;
+[4.660s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.660s] [01m[K/opt/ros/foxy/include/rclcpp/function_traits.hpp:59:9:[m[K [01;31m[Kerror: [m[Kdecltype cannot resolve address of overloaded function
+[4.660s]    59 |   using [01;31m[Kreturn_type[m[K = typename function_traits<decltype( &FunctionT::operator())>::return_type;
+[4.660s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[4.661s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.661s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:19:86:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KMinimalSubscriber::create_subscription<std_msgs::msg::String>(const char [17], int, std::_Bind_helper<false, void (MinimalSubscriber::*)(...), MinimalSubscriber*, const std::_Placeholder<1>&>::type)[m[K’
+[4.661s]    19 |       "visualizer_topic", 10, std::bind(&MinimalSubscriber::topic_callback, this, _1)[01;31m[K)[m[K;
+[4.661s]       |                                                                                      [01;31m[K^[m[K
+[4.661s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.661s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[4.661s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.662s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:7[m[K:
+[4.662s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class CallbackMessageT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<SubscriptionT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[4.662s]   213 |   [01;36m[Kcreate_subscription[m[K(
+[4.662s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.662s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:213:3:[m[K [01;36m[Knote: [m[K  substitution of deduced template arguments resulted in errors seen above
+[4.662s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.663s]    33 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.663s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[6.067s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[6.067s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+[6.067s] make: *** [Makefile:141: all] Error 2
+[6.070s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

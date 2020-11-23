@@ -1,0 +1,30 @@
+[0.031s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.114s] [35m[1mScanning dependencies of target visualizer[0m
+[0.148s] [ 50%] Built target talker
+[0.179s] [ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[4.796s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.796s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:34:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.796s]    34 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.796s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.801s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:40[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[4.802s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[4.803s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.803s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[4.803s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[4.803s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:7[m[K:
+[4.803s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.803s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:58:70:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((const std::__shared_ptr_access<geometry_msgs::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& msg))->std::__shared_ptr_access<geometry_msgs::msg::Pose_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->geometry_msgs::msg::Pose_<std::allocator<void> >::position.geometry_msgs::msg::Point_<std::allocator<void> >::x[m[K’, which is of non-class type ‘[01m[Kgeometry_msgs::msg::Point_<std::allocator<void> >::_x_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+[4.804s]    58 |     RCLCPP_INFO(this->get_logger(), "I heard: '%s'", msg->position.x.[01;31m[Kc_str[m[K());
+[4.804s]       |                                                                      [01;31m[K^~~~~[m[K
+[4.804s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:67:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.804s]    67 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+[4.804s]       |            [01;35m[K^~~~~[m[K
+[8.499s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[8.499s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+[8.500s] make: *** [Makefile:141: all] Error 2
+[8.503s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

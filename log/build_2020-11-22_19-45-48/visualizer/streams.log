@@ -1,0 +1,62 @@
+[0.035s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.113s] [35m[1mScanning dependencies of target visualizer[0m
+[0.146s] [ 50%] Built target talker
+[0.177s] [ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[4.690s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.690s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.690s]    33 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.690s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.695s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[4.695s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:59:57:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+[4.695s]    59 |   last_frame = cv::imread(frame_paths[numCallbackCalled][01;31m[K)[m[K;
+[4.696s]       |                                                         [01;31m[K^[m[K
+[4.696s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[4.696s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.696s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.696s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.697s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)[m[K’
+[4.697s]  1405 | Mat& [01;36m[KMat[m[K::operator = (Mat&& m)
+[4.697s]       |      [01;36m[K^~~[m[K
+[4.697s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:63:56:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+[4.697s]    63 |  curr_frame = cv::imread(frame_paths[numCallbackCalled][01;31m[K)[m[K;
+[4.697s]       |                                                        [01;31m[K^[m[K
+[4.697s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[4.698s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.698s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.698s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.698s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)[m[K’
+[4.698s]  1405 | Mat& [01;36m[KMat[m[K::operator = (Mat&& m)
+[4.698s]       |      [01;36m[K^~~[m[K
+[4.699s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+[4.699s]    66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, [01;31m[Kt[m[K.at<double>(2));
+[4.699s]       |                                                           [01;31m[K^[m[K
+[4.700s]       |                                                           [32m[Ktm[m[K
+[4.700s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+[4.700s]    66 |     double scale = getAbsoluteScale(numCallbackCalled, 0, t.at<[01;31m[Kdouble[m[K>(2));
+[4.700s]       |                                                                [01;31m[K^~~~~~[m[K
+[4.706s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:20:[m[K [01;31m[Kerror: [m[K‘[01m[KgetAbsoluteScale[m[K’ was not declared in this scope
+[4.706s]    66 |     double scale = [01;31m[KgetAbsoluteScale[m[K(numCallbackCalled, 0, t.at<double>(2));
+[4.706s]       |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.707s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:14:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+[4.708s]    69 |     traj_R = [01;31m[KR[m[K*traj_R;
+[4.708s]       |              [01;31m[K^[m[K
+[4.709s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:91:15:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+[4.709s]    91 |  last_frame = [01;31m[Kcurr_frame[m[K;
+[4.709s]       |               [01;31m[K^~~~~~~~~~[m[K
+[4.710s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[4.710s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.710s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.710s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.710s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:743:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(const cv::Mat&)[m[K’
+[4.710s]   743 | Mat& [01;36m[KMat[m[K::operator = (const Mat& m)
+[4.711s]       |      [01;36m[K^~~[m[K
+[4.711s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:92:2:[m[K [01;31m[Kerror: [m[Kincrement of member ‘[01m[KMinimalSubscriber::numCallbackCalled[m[K’ in read-only object
+[4.711s]    92 |  [01;31m[KnumCallbackCalled[m[K++;
+[4.711s]       |  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[4.711s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[4.711s]    55 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) const
+[4.711s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.365s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[8.365s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+[8.365s] make: *** [Makefile:141: all] Error 2
+[8.369s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

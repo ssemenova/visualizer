@@ -1,0 +1,17 @@
+/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/talker
+/home/rusty/GITrepo/visualizer/install/visualizer/lib/visualizer/visualizer
+/home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/package_run_dependencies/visualizer
+/home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/parent_prefix_path/visualizer
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.sh
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/ament_prefix_path.dsv
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.sh
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/environment/path.dsv
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.bash
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.sh
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.zsh
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/local_setup.dsv
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.dsv
+/home/rusty/GITrepo/visualizer/install/visualizer/share/ament_index/resource_index/packages/visualizer
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig.cmake
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/cmake/visualizerConfig-version.cmake
+/home/rusty/GITrepo/visualizer/install/visualizer/share/visualizer/package.xml

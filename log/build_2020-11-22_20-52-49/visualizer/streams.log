@@ -1,0 +1,40 @@
+[0.034s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.081s] -- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.127s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.469s] -- Found rclcpp: 2.2.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.509s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.517s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.790s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.793s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.047s] -- Found geometry_msgs: 2.0.3 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.131s] -- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.238s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.291s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.292s] -- Configured cppcheck include dirs: 
+[1.292s] -- Configured cppcheck exclude dirs and/or files: 
+[1.345s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.345s] -- Configured cpplint exclude dirs and/or files: 
+[1.352s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.366s] -- Added test 'lint_cmake' to check CMake code style
+[1.373s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.426s] -- Added test 'uncrustify' to check C / C++ code style
+[1.426s] -- Configured uncrustify additional arguments: 
+[1.433s] -- Added test 'xmllint' to check XML markup files
+[1.438s] -- Configuring done
+[1.442s] CMake Error at CMakeLists.txt:30 (add_executable):
+[1.442s]   Cannot find source file:
+[1.443s] 
+[1.443s]     src/publisher.cpp
+[1.443s] 
+[1.443s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
+[1.443s]   .hpp .hxx .in .txx
+[1.443s] 
+[1.444s] 
+[1.444s] CMake Error at CMakeLists.txt:30 (add_executable):
+[1.444s]   No SOURCES given to target: talker
+[1.444s] 
+[1.444s] 
+[1.444s] CMake Generate step failed.  Build files cannot be regenerated correctly.
+[1.451s] make: *** [Makefile:354: cmake_check_build_system] Error 1
+[1.455s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

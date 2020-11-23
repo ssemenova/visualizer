@@ -1,0 +1,227 @@
+[0.029s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.109s] [35m[1mScanning dependencies of target visualizer[0m
+[0.142s] [ 50%] Built target talker
+[0.187s] [ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[4.701s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.701s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:34:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.701s]    34 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.701s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.706s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.707s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[4.707s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->[01;31m[Kpose[m[K->position.x, msg->pose->position.y, msg->pose->position.z});
+[4.709s]       |                                             [01;31m[K^~~~[m[K
+[4.709s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:68:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[4.709s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->[01;31m[Kpose[m[K->position.y, msg->pose->position.z});
+[4.710s]       |                                                                    [01;31m[K^~~~[m[K
+[4.710s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:91:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kpose[m[K’
+[4.710s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->[01;31m[Kpose[m[K->position.z});
+[4.710s]       |                                                                                           [01;31m[K^~~~[m[K
+[4.710s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::Mat(int, int, int, <brace-enclosed initializer list>)[m[K’
+[4.710s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;31m[K)[m[K;
+[4.711s]       |                                                                                                            [01;31m[K^[m[K
+[4.711s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[4.711s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.711s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.711s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.711s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(cv::Mat&&)[m[K’
+[4.712s]  1380 | [01;36m[KMat[m[K::Mat(Mat&& m)
+[4.712s]       | [01;36m[K^~~[m[K
+[4.712s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1380:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[4.712s] In file included from [01m[K/usr/include/opencv4/opencv2/core/cuda.hpp:1047[m[K,
+[4.712s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp:47[m[K,
+[4.712s]                  from [01m[K/usr/include/opencv4/opencv2/stitching/warpers.hpp:46[m[K,
+[4.713s]                  from [01m[K/usr/include/opencv4/opencv2/stitching.hpp:48[m[K,
+[4.713s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:89[m[K,
+[4.713s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.713s] [01m[K/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::cuda::GpuMat&)[m[K’
+[4.713s]   621 | [01;36m[KMat[m[K::Mat(const cuda::GpuMat& m)
+[4.713s]       | [01;36m[K^~~[m[K
+[4.714s] [01m[K/usr/include/opencv4/opencv2/core/cuda.inl.hpp:621:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[4.714s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.714s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.714s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.714s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1038:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat::Mat(const cv::MatCommaInitializer_<_Tp>&)[m[K’
+[4.714s]  1038 |     template<typename _Tp> explicit [01;36m[KMat[m[K(const MatCommaInitializer_<_Tp>& commaInitializer);
+[4.715s]       |                                     [01;36m[K^~~[m[K
+[4.715s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1038:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.715s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::MatCommaInitializer_<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.715s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.715s]       |                                                                                                            [01;36m[K^[m[K
+[4.715s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.716s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.716s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.716s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1034:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat::Mat(const cv::Point3_<_Tp>&, bool)[m[K’
+[4.716s]  1034 |     template<typename _Tp> explicit [01;36m[KMat[m[K(const Point3_<_Tp>& pt, bool copyData=true);
+[4.716s]       |                                     [01;36m[K^~~[m[K
+[4.716s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1034:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.717s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Point3_<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.717s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.717s]       |                                                                                                            [01;36m[K^[m[K
+[4.717s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.717s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.717s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.717s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1030:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat::Mat(const cv::Point_<_Tp>&, bool)[m[K’
+[4.718s]  1030 |     template<typename _Tp> explicit [01;36m[KMat[m[K(const Point_<_Tp>& pt, bool copyData=true);
+[4.718s]       |                                     [01;36m[K^~~[m[K
+[4.718s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1030:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.718s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Point_<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.718s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.719s]       |                                                                                                            [01;36m[K^[m[K
+[4.719s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.719s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.719s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.719s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1026:51:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int m, int n> cv::Mat::Mat(const cv::Matx<_Tp, m, n>&, bool)[m[K’
+[4.720s]  1026 |     template<typename _Tp, int m, int n> explicit [01;36m[KMat[m[K(const Matx<_Tp, m, n>& mtx, bool copyData=true);
+[4.720s]       |                                                   [01;36m[K^~~[m[K
+[4.720s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1026:51:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.720s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Matx<_Tp, m, n>[m[K’ and ‘[01m[Kint[m[K’
+[4.720s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.720s]       |                                                                                                            [01;36m[K^[m[K
+[4.721s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.721s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.721s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.721s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1022:44:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> cv::Mat::Mat(const cv::Vec<_Tp, m>&, bool)[m[K’
+[4.721s]  1022 |     template<typename _Tp, int n> explicit [01;36m[KMat[m[K(const Vec<_Tp, n>& vec, bool copyData=true);
+[4.721s]       |                                            [01;36m[K^~~[m[K
+[4.722s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1022:44:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.722s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst cv::Vec<_Tp, m>[m[K’ and ‘[01m[Kint[m[K’
+[4.722s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.722s]       |                                                                                                            [01;36m[K^[m[K
+[4.722s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.722s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.723s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.723s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1018:49:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, long unsigned int _Nm> cv::Mat::Mat(const std::array<_Tp, _Nm>&, bool)[m[K’
+[4.723s]  1018 |     template<typename _Tp, size_t _Nm> explicit [01;36m[KMat[m[K(const std::array<_Tp, _Nm>& arr, bool copyData=false);
+[4.723s]       |                                                 [01;36m[K^~~[m[K
+[4.723s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1018:49:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.723s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::array<_Tp, _Nm>[m[K’ and ‘[01m[Kint[m[K’
+[4.723s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.724s]       |                                                                                                            [01;36m[K^[m[K
+[4.724s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.724s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.724s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.724s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1014:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat::Mat(std::initializer_list<int>, std::initializer_list<_Tp>)[m[K’
+[4.724s]  1014 |     template<typename _Tp> explicit [01;36m[KMat[m[K(const std::initializer_list<int> sizes, const std::initializer_list<_Tp> list);
+[4.725s]       |                                     [01;36m[K^~~[m[K
+[4.725s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1014:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.725s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.725s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.725s]       |                                                                                                            [01;36m[K^[m[K
+[4.725s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.726s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.726s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.726s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1010:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class> cv::Mat::Mat(std::initializer_list<_Tp>)[m[K’
+[4.726s]  1010 |     explicit [01;36m[KMat[m[K(const std::initializer_list<_Tp> list);
+[4.726s]       |              [01;36m[K^~~[m[K
+[4.726s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1010:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.727s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kstd::initializer_list<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.727s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.727s]       |                                                                                                            [01;36m[K^[m[K
+[4.727s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.727s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.727s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.728s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1005:37:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> cv::Mat::Mat(const std::vector<_Tp>&, bool)[m[K’
+[4.728s]  1005 |     template<typename _Tp> explicit [01;36m[KMat[m[K(const std::vector<_Tp>& vec, bool copyData=false);
+[4.728s]       |                                     [01;36m[K^~~[m[K
+[4.728s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1005:37:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.728s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::vector<_Tp>[m[K’ and ‘[01m[Kint[m[K’
+[4.728s]    69 |     cv::Mat R = cv::Mat(1, 3, CV_32F, {msg->pose->position.x, msg->pose->position.y, msg->pose->position.z}[01;36m[K)[m[K;
+[4.729s]       |                                                                                                            [01;36m[K^[m[K
+[4.729s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.729s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.729s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.729s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:987:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::Mat&, const std::vector<cv::Range>&)[m[K’
+[4.729s]   987 |     [01;36m[KMat[m[K(const Mat& m, const std::vector<Range>& ranges);
+[4.730s]       |     [01;36m[K^~~[m[K
+[4.730s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:987:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[4.730s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:977:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::Mat&, const cv::Range*)[m[K’
+[4.730s]   977 |     [01;36m[KMat[m[K(const Mat& m, const Range* ranges);
+[4.730s]       |     [01;36m[K^~~[m[K
+[4.730s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:977:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[4.731s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:967:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::Mat&, const Rect&)[m[K’
+[4.731s]   967 |     [01;36m[KMat[m[K(const Mat& m, const Rect& roi);
+[4.731s]       |     [01;36m[K^~~[m[K
+[4.731s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:967:5:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[4.731s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:957:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::Mat&, const cv::Range&, const cv::Range&)[m[K’
+[4.731s]   957 |     [01;36m[KMat[m[K(const Mat& m, const Range& rowRange, const Range& colRange=Range::all());
+[4.732s]       |     [01;36m[K^~~[m[K
+[4.732s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:957:5:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[4.732s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:945:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const std::vector<int>&, int, void*, const size_t*)[m[K’
+[4.732s]   945 |     [01;36m[KMat[m[K(const std::vector<int>& sizes, int type, void* data, const size_t* steps=0);
+[4.732s]       |     [01;36m[K^~~[m[K
+[4.732s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:945:33:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std::vector<int>&[m[K’
+[4.732s]   945 |     Mat([01;36m[Kconst std::vector<int>& sizes[m[K, int type, void* data, const size_t* steps=0);
+[4.733s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[4.733s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:931:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, const int*, int, void*, const size_t*)[m[K’
+[4.733s]   931 |     [01;36m[KMat[m[K(int ndims, const int* sizes, int type, void* data, const size_t* steps=0);
+[4.733s]       |     [01;36m[K^~~[m[K
+[4.733s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:931:54:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kvoid*[m[K’
+[4.733s]   931 |     Mat(int ndims, const int* sizes, int type, [01;36m[Kvoid* data[m[K, const size_t* steps=0);
+[4.734s]       |                                                [01;36m[K~~~~~~^~~~[m[K
+[4.734s] In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+[4.734s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+[4.734s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+[4.734s]                  from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[4.735s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(cv::Size, int, void*, size_t)[m[K’
+[4.735s]   572 | [01;36m[KMat[m[K::Mat(Size _sz, int _type, void* _data, size_t _step)
+[4.735s]       | [01;36m[K^~~[m[K
+[4.735s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:572:15:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kcv::Size[m[K’ {aka ‘[01m[Kcv::Size_<int>[m[K’}
+[4.735s]   572 | Mat::Mat([01;36m[KSize _sz[m[K, int _type, void* _data, size_t _step)
+[4.735s]       |          [01;36m[K~~~~~^~~[m[K
+[4.736s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, int, int, void*, size_t)[m[K’
+[4.736s]   543 | [01;36m[KMat[m[K::Mat(int _rows, int _cols, int _type, void* _data, size_t _step)
+[4.736s]       | [01;36m[K^~~[m[K
+[4.736s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:543:49:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kvoid*[m[K’
+[4.736s]   543 | Mat::Mat(int _rows, int _cols, int _type, [01;36m[Kvoid* _data[m[K, size_t _step)
+[4.736s]       |                                           [01;36m[K~~~~~~^~~~~[m[K
+[4.736s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const cv::Mat&)[m[K’
+[4.737s]   524 | [01;36m[KMat[m[K::Mat(const Mat& m)
+[4.737s]       | [01;36m[K^~~[m[K
+[4.737s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:524:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 4 provided
+[4.737s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const std::vector<int>&, int, const Scalar&)[m[K’
+[4.737s]   515 | [01;36m[KMat[m[K::Mat(const std::vector<int>& _sz, int _type, const Scalar& _s)
+[4.737s]       | [01;36m[K^~~[m[K
+[4.738s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:515:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[4.738s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, const int*, int, const Scalar&)[m[K’
+[4.738s]   498 | [01;36m[KMat[m[K::Mat(int _dims, const int* _sz, int _type, const Scalar& _s)
+[4.738s]       | [01;36m[K^~~[m[K
+[4.738s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:498:62:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+[4.738s]   498 | Mat::Mat(int _dims, const int* _sz, int _type, [01;36m[Kconst Scalar& _s[m[K)
+[4.739s]       |                                                [01;36m[K~~~~~~~~~~~~~~^~[m[K
+[4.739s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(const std::vector<int>&, int)[m[K’
+[4.739s]   507 | [01;36m[KMat[m[K::Mat(const std::vector<int>& _sz, int _type)
+[4.739s]       | [01;36m[K^~~[m[K
+[4.739s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:507:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[4.739s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, const int*, int)[m[K’
+[4.740s]   490 | [01;36m[KMat[m[K::Mat(int _dims, const int* _sz, int _type)
+[4.740s]       | [01;36m[K^~~[m[K
+[4.740s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:490:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[4.740s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(cv::Size, int, const Scalar&)[m[K’
+[4.740s]   481 | [01;36m[KMat[m[K::Mat(Size _sz, int _type, const Scalar& _s)
+[4.740s]       | [01;36m[K^~~[m[K
+[4.741s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:481:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[4.741s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, int, int, const Scalar&)[m[K’
+[4.741s]   464 | [01;36m[KMat[m[K::Mat(int _rows, int _cols, int _type, const Scalar& _s)
+[4.741s]       | [01;36m[K^~~[m[K
+[4.741s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:464:57:[m[K [01;36m[Knote: [m[K  no known conversion for argument 4 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst Scalar&[m[K’ {aka ‘[01m[Kconst cv::Scalar_<double>&[m[K’}
+[4.741s]   464 | Mat::Mat(int _rows, int _cols, int _type, [01;36m[Kconst Scalar& _s[m[K)
+[4.741s]       |                                           [01;36m[K~~~~~~~~~~~~~~^~[m[K
+[4.742s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(cv::Size, int)[m[K’
+[4.742s]   473 | [01;36m[KMat[m[K::Mat(Size _sz, int _type)
+[4.742s]       | [01;36m[K^~~[m[K
+[4.742s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:473:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 4 provided
+[4.742s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat(int, int, int)[m[K’
+[4.743s]   456 | [01;36m[KMat[m[K::Mat(int _rows, int _cols, int _type)
+[4.743s]       | [01;36m[K^~~[m[K
+[4.743s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:456:1:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 4 provided
+[4.743s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat::Mat()[m[K’
+[4.743s]   450 | [01;36m[KMat[m[K::Mat()
+[4.743s]       | [01;36m[K^~~[m[K
+[4.743s] [01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:450:1:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 4 provided
+[4.744s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:67:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.744s]    67 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+[4.744s]       |            [01;35m[K^~~~~[m[K
+[8.293s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[8.294s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+[8.294s] make: *** [Makefile:141: all] Error 2
+[8.297s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

@@ -1,0 +1,43 @@
+[35m[1mScanning dependencies of target sub[0m
+[ 33%] Built target talker
+[ 66%] Built target visualizer
+[ 83%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:24:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ was not declared in this scope; did you mean ‘[01m[Kgcvt[m[K’?
+   24 |   std::vector<[01;31m[Kcv[m[K::String> frame_paths;
+      |               [01;31m[K^~[m[K
+      |               [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:24:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   24 |   std::vector<cv::String[01;31m[K>[m[K frame_paths;
+      |                         [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:24:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:28:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+   28 |   [01;31m[Kcv[m[K::Mat traj_t;
+      |   [01;31m[K^~[m[K
+      |   [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:29:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+   29 |   [01;31m[Kcv[m[K::Mat traj_R;
+      |   [01;31m[K^~[m[K
+      |   [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:30:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+   30 |   [01;31m[Kcv[m[K::Mat traj;
+      |   [01;31m[K^~[m[K
+      |   [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:34:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+   34 |   [01;31m[Kcv[m[K::Mat curr_frame;
+      |   [01;31m[K^~[m[K
+      |   [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:35:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[Kgcvt[m[K’?
+   35 |   [01;31m[Kcv[m[K::Mat last_frame;
+      |   [01;31m[K^~[m[K
+      |   [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:36:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kcv[m[K’ was not declared in this scope; did you mean ‘[01m[Kgcvt[m[K’?
+   36 |   std::vector<[01;31m[Kcv[m[K::Mat> groundTruth;
+      |               [01;31m[K^~[m[K
+      |               [32m[Kgcvt[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:36:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   36 |   std::vector<cv::Mat[01;31m[K>[m[K groundTruth;
+      |                      [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:36:22:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

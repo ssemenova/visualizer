@@ -1,0 +1,562 @@
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:33:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   33 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+      |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:59:57:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   59 |   last_frame = cv::imread(frame_paths[numCallbackCalled][01;31m[K)[m[K;
+      |                                                         [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)[m[K’
+ 1405 | Mat& [01;36m[KMat[m[K::operator = (Mat&& m)
+      |      [01;36m[K^~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:63:56:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   63 |  curr_frame = cv::imread(frame_paths[numCallbackCalled][01;31m[K)[m[K;
+      |                                                        [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:1405:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(cv::Mat&&)[m[K’
+ 1405 | Mat& [01;36m[KMat[m[K::operator = (Mat&& m)
+      |      [01;36m[K^~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:10:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdouble[m[K’
+   66 |     std::[01;31m[Kdouble[m[K scale = getAbsoluteScale(numCallbackCalled, 0, t.at<std::double>(2));
+      |          [01;31m[K^~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:68:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kscale[m[K’ was not declared in this scope; did you mean ‘[01m[Kscalb[m[K’?
+   68 |     traj_t = traj_t + [01;31m[Kscale[m[K*(traj_R*t);
+      |                       [01;31m[K^~~~~[m[K
+      |                       [32m[Kscalb[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:68:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   68 |     traj_t = traj_t + scale*(traj_R*[01;31m[Kt[m[K);
+      |                                     [01;31m[K^[m[K
+      |                                     [32m[Ktm[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:14:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+   69 |     traj_R = [01;31m[KR[m[K*traj_R;
+      |              [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:23:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   73 |  int x_truth = int(gt.[01;31m[Kat<std::double>[m[K(0,3));
+      |                       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at<<expression error> >(int, int)[m[K’
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)[m[K’
+ 1911 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const[m[K’
+ 1915 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)[m[K’
+ 1920 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const[m[K’
+ 1925 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)[m[K’
+ 1932 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const[m[K’
+ 1938 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)[m[K’
+ 1943 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const[m[K’
+ 1947 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)[m[K’
+ 1950 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+      |                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const[m[K’
+ 1952 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+      |                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)[m[K’
+ 1958 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const[m[K’
+ 1963 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:73:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   73 |  int x_truth = int(gt.at<std::double>(0,3[01;31m[K)[m[K);
+      |                                          [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:24:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   74 |  int z_truth = -int(gt.[01;31m[Kat<std::double>[m[K(2,3));
+      |                        [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at<<expression error> >(int, int)[m[K’
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)[m[K’
+ 1911 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const[m[K’
+ 1915 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)[m[K’
+ 1920 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const[m[K’
+ 1925 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)[m[K’
+ 1932 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const[m[K’
+ 1938 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)[m[K’
+ 1943 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const[m[K’
+ 1947 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)[m[K’
+ 1950 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+      |                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const[m[K’
+ 1952 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+      |                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)[m[K’
+ 1958 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const[m[K’
+ 1963 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:43:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   74 |  int z_truth = -int(gt.at<std::double>(2,3[01;31m[K)[m[K);
+      |                                           [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:21:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   76 |  int x = int(traj_t.[01;31m[Kat<std::double>[m[K(0));
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at<<expression error> >(int) const[m[K’
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)[m[K’
+ 1911 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const[m[K’
+ 1915 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)[m[K’
+ 1920 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const[m[K’
+ 1925 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)[m[K’
+ 1932 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const[m[K’
+ 1938 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)[m[K’
+ 1943 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const[m[K’
+ 1947 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)[m[K’
+ 1950 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+      |                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const[m[K’
+ 1952 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+      |                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)[m[K’
+ 1958 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const[m[K’
+ 1963 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:76:38:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   76 |  int x = int(traj_t.at<std::double>(0[01;31m[K)[m[K);
+      |                                      [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:22:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   77 |  int z = -int(traj_t.[01;31m[Kat<std::double>[m[K(2));
+      |                      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::Mat::at<<expression error> >(int) const[m[K’
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int)[m[K’
+ 1911 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0=0);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1911:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int) const[m[K’
+ 1915 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0=0) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1915:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int)[m[K’
+ 1920 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int row, int col);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1920:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int) const[m[K’
+ 1925 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int row, int col) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1925:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(int, int, int)[m[K’
+ 1932 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1932:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(int, int, int) const[m[K’
+ 1938 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(int i0, int i1, int i2) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1938:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(const int*)[m[K’
+ 1943 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(const int* idx);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1943:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(const int*) const[m[K’
+ 1947 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(const int* idx) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1947:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> _Tp& cv::Mat::at(const cv::Vec<int, n>&)[m[K’
+ 1950 |     template<typename _Tp, int n> _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx);
+      |                                        [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1950:40:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, int n> const _Tp& cv::Mat::at(const cv::Vec<int, n>&) const[m[K’
+ 1952 |     template<typename _Tp, int n> const _Tp& [01;36m[Kat[m[K(const Vec<int, n>& idx) const;
+      |                                              [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1952:46:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> _Tp& cv::Mat::at(cv::Point)[m[K’
+ 1958 |     template<typename _Tp> _Tp& [01;36m[Kat[m[K(Point pt);
+      |                                 [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1958:33:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> const _Tp& cv::Mat::at(cv::Point) const[m[K’
+ 1963 |     template<typename _Tp> const _Tp& [01;36m[Kat[m[K(Point pt) const;
+      |                                       [01;36m[K^~[m[K
+[01m[K/usr/include/opencv4/opencv2/core/mat.hpp:1963:39:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:77:39:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   77 |  int z = -int(traj_t.at<std::double>(2[01;31m[K)[m[K);
+      |                                       [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:91:15:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   91 |  last_frame = [01;31m[Kcurr_frame[m[K;
+      |               [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:743:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(const cv::Mat&)[m[K’
+  743 | Mat& [01;36m[KMat[m[K::operator = (const Mat& m)
+      |      [01;36m[K^~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:92:2:[m[K [01;31m[Kerror: [m[Kincrement of member ‘[01m[KMinimalSubscriber::numCallbackCalled[m[K’ in read-only object
+   92 |  [01;31m[KnumCallbackCalled[m[K++;
+      |  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   55 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) const
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

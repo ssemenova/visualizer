@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target sub[0m
+[ 33%] Built target talker
+[ 66%] Built target visualizer
+[ 83%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+    4 | #include [01;31m[K"opencv2/opencv.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

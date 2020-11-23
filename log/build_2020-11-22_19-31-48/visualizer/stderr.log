@@ -1,0 +1,100 @@
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:55:24:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::Mat> MinimalSubscriber::groundTruth[m[K’
+   55 |   std::vector<cv::Mat> [01;31m[KgroundTruth[m[K;
+      |                        [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:45:24:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kstd::vector<cv::Mat> MinimalSubscriber::groundTruth[m[K’
+   45 |   std::vector<cv::Mat> [01;36m[KgroundTruth[m[K;
+      |                        [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:100:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kstring[m[K’ has not been declared
+  100 |   std::vector<cv::Mat> loadGroundTruth([01;31m[Kstring[m[K filename) {
+      |                                        [01;31m[K^~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:29:56:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kconst char*[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K-fpermissive[m[K]
+   29 |     std::vector<cv::Mat> groundTruth = loadGroundTruth([01;31m[K"~/rgbd_dataset_freiburg1_desk2/groundtruth.txt"[m[K);
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                        [01;31m[K|[m[K
+      |                                                        [01;31m[Kconst char*[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:100:47:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kstd::vector<cv::Mat> MinimalSubscriber::loadGroundTruth(int)[m[K’
+  100 |   std::vector<cv::Mat> loadGroundTruth([01;36m[Kstring filename[m[K) {
+      |                                        [01;36m[K~~~~~~~^~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:34:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   34 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+      |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr) const[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:62:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   62 |   last_frame = cv::imread(frame_paths[[01;31m[Ki[m[K]);
+      |                                       [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:66:38:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ was not declared in this scope
+   66 |  curr_frame = cv::imread(frame_paths[[01;31m[Ki[m[K]);
+      |                                      [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:69:15:[m[K [01;31m[Kerror: [m[Kpassing ‘[01m[Kconst cv::Mat[m[K’ as ‘[01m[Kthis[m[K’ argument discards qualifiers [[01;31m[K-fpermissive[m[K]
+   69 |  last_frame = [01;31m[Kcurr_frame[m[K;
+      |               [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:3724[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:59[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/mat.inl.hpp:743:6:[m[K [01;36m[Knote: [m[K  in call to ‘[01m[Kcv::Mat& cv::Mat::operator=(const cv::Mat&)[m[K’
+  743 | Mat& [01;36m[KMat[m[K::operator = (const Mat& m)
+      |      [01;36m[K^~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:70:2:[m[K [01;31m[Kerror: [m[K‘[01m[KnumCallBackCalled[m[K’ was not declared in this scope; did you mean ‘[01m[KnumCallbackCalled[m[K’?
+   70 |  [01;31m[KnumCallBackCalled[m[K++;
+      |  [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |  [32m[KnumCallbackCalled[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:72:59:[m[K [01;31m[Kerror: [m[K‘[01m[Kt[m[K’ was not declared in this scope; did you mean ‘[01m[Ktm[m[K’?
+   72 |     double scale = getAbsoluteScale(numCallbackCalled, 0, [01;31m[Kt[m[K.at<double>(2));
+      |                                                           [01;31m[K^[m[K
+      |                                                           [32m[Ktm[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:72:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   72 |     double scale = getAbsoluteScale(numCallbackCalled, 0, t.at<[01;31m[Kdouble[m[K>(2));
+      |                                                                [01;31m[K^~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:72:20:[m[K [01;31m[Kerror: [m[K‘[01m[KgetAbsoluteScale[m[K’ was not declared in this scope
+   72 |     double scale = [01;31m[KgetAbsoluteScale[m[K(numCallbackCalled, 0, t.at<double>(2));
+      |                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:75:14:[m[K [01;31m[Kerror: [m[K‘[01m[KR[m[K’ was not declared in this scope
+   75 |     traj_R = [01;31m[KR[m[K*traj_R;
+      |              [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:58:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   58 |   void topic_callback([01;35m[Kconst std_msgs::msg::String::SharedPtr msg[m[K) const
+      |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kstd::vector<cv::Mat> MinimalSubscriber::loadGroundTruth(int)[m[K’:
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:101:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::vector[m[K’?
+  101 |     [01;31m[Kvector[m[K<cv::Mat> gt;
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Kstd::vector[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/types.hpp:53[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:52[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:3[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:386:11:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector[m[K’ declared here
+  386 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+      |           [01;36m[K^~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:101:19:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  101 |     vector<cv::Mat[01;31m[K>[m[K gt;
+      |                   [01;31m[K^[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:101:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgt[m[K’ was not declared in this scope
+  101 |     vector<cv::Mat> [01;31m[Kgt[m[K;
+      |                     [01;31m[K^~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:102:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kifstream[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::ifstream[m[K’?
+  102 |     [01;31m[Kifstream[m[K file(filename);
+      |     [01;31m[K^~~~~~~~[m[K
+      |     [32m[Kstd::ifstream[m[K
+In file included from [01m[K/usr/include/c++/9/bits/localefwd.h:41[m[K,
+                 from [01m[K/usr/include/c++/9/string:43[m[K,
+                 from [01m[K/usr/include/c++/9/stdexcept:39[m[K,
+                 from [01m[K/usr/include/c++/9/array:39[m[K,
+                 from [01m[K/usr/include/c++/9/tuple:39[m[K,
+                 from [01m[K/usr/include/c++/9/functional:54[m[K,
+                 from [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:1[m[K:
+[01m[K/usr/include/c++/9/iosfwd:162:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ifstream[m[K’ declared here
+  162 |   typedef basic_ifstream<char>   [01;36m[Kifstream[m[K;
+      |                                  [01;36m[K^~~~~~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:105:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kfile[m[K’ was not declared in this scope
+  105 |     while (getline([01;31m[Kfile[m[K, line)) {
+      |                    [01;31m[K^~~~[m[K
+[01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:100:47:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfilename[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  100 |   std::vector<cv::Mat> loadGroundTruth([01;35m[Kstring filename[m[K) {
+      |                                        [01;35m[K~~~~~~~^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

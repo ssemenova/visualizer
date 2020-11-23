@@ -1,0 +1,17 @@
+[0.035s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.108s] [35m[1mScanning dependencies of target sub[0m
+[0.145s] [ 33%] Built target talker
+[0.149s] [ 66%] Built target visualizer
+[0.207s] [ 83%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[4.664s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.664s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:28:19:[m[K [01;31m[Kerror: [m[K‘[01m[KloadGroundTruth[m[K’ was not declared in this scope; did you mean ‘[01m[KgroundTruth[m[K’?
+[4.664s]    28 |     groundTruth = [01;31m[KloadGroundTruth[m[K("~/rgbd_dataset_freiburg1_desk2/groundtruth.txt");
+[4.665s]       |                   [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.665s]       |                   [32m[KgroundTruth[m[K
+[4.665s] [01m[K/home/rusty/GITrepo/visualizer/src/subscriber.cpp:33:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.665s]    33 |   int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.665s]       |       [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[8.196s] make[2]: *** [CMakeFiles/sub.dir/build.make:63: CMakeFiles/sub.dir/src/subscriber.cpp.o] Error 1
+[8.196s] make[1]: *** [CMakeFiles/Makefile2:109: CMakeFiles/sub.dir/all] Error 2
+[8.197s] make: *** [Makefile:141: all] Error 2
+[8.200s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

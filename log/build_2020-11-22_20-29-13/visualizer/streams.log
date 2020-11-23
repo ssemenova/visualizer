@@ -1,0 +1,53 @@
+[0.032s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.073s] -- Found ament_cmake: 0.9.7 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.117s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.453s] -- Found rclcpp: 2.2.0 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.493s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.500s] -- Found rosidl_adapter: 1.1.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.686s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.789s] -- Found rmw_implementation_cmake: 1.0.2 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.792s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.048s] -- Found geometry_msgs: 2.0.3 (/opt/ros/foxy/share/geometry_msgs/cmake)
+[1.136s] -- Found ament_lint_auto: 0.9.5 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.244s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.290s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.290s] -- Configured cppcheck include dirs: 
+[1.291s] -- Configured cppcheck exclude dirs and/or files: 
+[1.337s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.337s] -- Configured cpplint exclude dirs and/or files: 
+[1.343s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.355s] -- Added test 'lint_cmake' to check CMake code style
+[1.362s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.407s] -- Added test 'uncrustify' to check C / C++ code style
+[1.408s] -- Configured uncrustify additional arguments: 
+[1.413s] -- Added test 'xmllint' to check XML markup files
+[1.418s] -- Configuring done
+[1.454s] -- Generating done
+[1.458s] -- Build files have been written to: /home/rusty/GITrepo/visualizer/build/visualizer
+[1.500s] [35m[1mScanning dependencies of target sub[0m
+[1.512s] [35m[1mScanning dependencies of target visualizer[0m
+[1.541s] [ 33%] Built target talker
+[1.572s] [ 50%] [32mBuilding CXX object CMakeFiles/sub.dir/src/subscriber.cpp.o[0m
+[1.575s] [ 66%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[6.121s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[6.122s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:36:2:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+[6.122s]    36 |  [01;31m[Ksubscription_[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+[6.122s]       |  [01;31m[K^~~~~~~~~~~~~[m[K
+[6.122s]       |  [32m[Krcl_subscription_t[m[K
+[6.155s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:32:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.155s]    32 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[6.156s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[6.167s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.167s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:70:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.168s]    70 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+[6.168s]       |            [01;35m[K^~~~~[m[K
+[6.168s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:74:11:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ky[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[6.168s]    74 |     float [01;35m[Ky[m[K = msg->position.y;
+[6.168s]       |           [01;35m[K^[m[K
+[9.605s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[9.605s] make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/visualizer.dir/all] Error 2
+[9.606s] make[1]: *** Waiting for unfinished jobs....
+[9.641s] [ 83%] [32m[1mLinking CXX executable sub[0m
+[10.038s] [ 83%] Built target sub
+[10.039s] make: *** [Makefile:141: all] Error 2
+[10.045s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8

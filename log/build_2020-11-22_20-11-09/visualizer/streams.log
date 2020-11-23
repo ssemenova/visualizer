@@ -1,0 +1,33 @@
+[0.032s] Invoking command in '/home/rusty/GITrepo/visualizer/build/visualizer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
+[0.113s] [35m[1mScanning dependencies of target visualizer[0m
+[0.147s] [ 50%] Built target talker
+[0.179s] [ 75%] [32mBuilding CXX object CMakeFiles/visualizer.dir/src/visualizer.cpp.o[0m
+[4.690s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[4.690s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:34:6:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KnumCallbackCalled[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.691s]    34 |  int [01;35m[KnumCallbackCalled[m[K = 0;
+[4.691s]       |      [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[4.699s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.699s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Klet[m[K’ was not declared in this scope
+[4.700s]    70 |     [01;31m[Klet[m[K x = msg->position.x;
+[4.700s]       |     [01;31m[K^~~[m[K
+[4.700s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:71:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Ky[m[K’
+[4.700s]    71 |     let[01;31m[K [m[K[32m[Ky[m[K = msg->position.y;
+[4.700s]       |        [01;31m[K^[m[K[32m[K~[m[K
+[4.700s]       |        [32m[K;[m[K
+[4.701s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:72:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kz[m[K’
+[4.701s]    72 |     let[01;31m[K [m[K[32m[Kz[m[K = msg->position.z;
+[4.701s]       |        [01;31m[K^[m[K[32m[K~[m[K
+[4.701s]       |        [32m[K;[m[K
+[4.701s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:90:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+[4.702s]    90 |  cv::circle(traj, cv::Point([01;31m[Kx[m[K+x_offset,z+z_offset), 1, CV_RGB(255,0,0), 2);
+[4.702s]       |                             [01;31m[K^[m[K
+[4.702s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:90:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kz[m[K’ was not declared in this scope
+[4.702s]    90 |  cv::circle(traj, cv::Point(x+x_offset,[01;31m[Kz[m[K+z_offset), 1, CV_RGB(255,0,0), 2);
+[4.703s]       |                                        [01;31m[K^[m[K
+[4.703s] [01m[K/home/rusty/GITrepo/visualizer/src/visualizer.cpp:67:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kscale[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.703s]    67 |     double [01;35m[Kscale[m[K = 1; //getAbsoluteScale(numCallbackCalled, 0, t.at<double>(2));
+[4.703s]       |            [01;35m[K^~~~~[m[K
+[8.290s] make[2]: *** [CMakeFiles/visualizer.dir/build.make:63: CMakeFiles/visualizer.dir/src/visualizer.cpp.o] Error 1
+[8.290s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/visualizer.dir/all] Error 2
+[8.290s] make: *** [Makefile:141: all] Error 2
+[8.294s] Invoked command in '/home/rusty/GITrepo/visualizer/build/visualizer' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rusty/turtlbot3_ws/install/turtlebot3_teleop:/home/rusty/turtlbot3_ws/install/turtlebot3_example:/opt/ros/foxy /usr/bin/cmake --build /home/rusty/GITrepo/visualizer/build/visualizer -- -j8 -l8
